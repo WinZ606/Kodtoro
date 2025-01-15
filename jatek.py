@@ -38,7 +38,7 @@ def jatekos():
 
 def helyese(gep):
     vegjel = ""
-    for o in range(0,9,1):
+    for o in range(0,10,1):
         jelzes = []
         jatekostipp = jatekos()
         for i in range(4):
@@ -52,7 +52,7 @@ def helyese(gep):
         print(*jelzes,sep=" ")
         print()
         if jelzes == ["⬛", "⬛", "⬛", "⬛"]:
-            vegjel = print("nyertél")
+            vegjel = print("************\n* Nyertél! *\n************")
             return vegjel
-    vegjel = print("vesztettél")
+    vegjel = print("***************\n* Vesztettél! *\n*!*************")
     return vegjel
