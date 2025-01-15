@@ -13,7 +13,7 @@ def gepszinek():
     return gepszinei
 
 def jatekos():
-    print("1 = 🟥\n2 = 🟦\n3 = 🟩\n4 = 🟨\n5 = 🟧\n6 = 🟪")
+    print("\n1 = 🟥\n2 = 🟦\n3 = 🟩\n4 = 🟨\n5 = 🟧\n6 = 🟪\n")
     jatekoslista = []
     for i in range(0,4,1):
         tipp = int(input("tippelj egy számot: "))
@@ -34,6 +34,7 @@ def jatekos():
             return jatekos()
     print()
     print(*jatekoslista,"\n",sep=" ",end="")
+    print()
     return jatekoslista
 
 def helyese(gep):
